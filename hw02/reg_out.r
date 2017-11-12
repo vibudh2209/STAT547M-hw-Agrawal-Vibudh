@@ -69,7 +69,8 @@ knitr::kable(Asia_worst)
 
 plot_asia_worst <-country_data_reord %>% 
 	filter(country %in% Asia_worst$country) %>% 
-	ggplot(aes(x=year,y=lifeExp)) + facet_wrap(~country) + geom_point() + geom_smooth(method="lm",se=FALSE)
+	ggplot(aes(x=year,y=lifeExp)) + facet_wrap(~country) + geom_point() + geom_smooth(method="lm",se=FALSE) +
+	labs(titile="Asia")+ theme(plot.title=element_text(hjust=0.5))
 print(plot_asia_worst)
 
 
@@ -86,7 +87,8 @@ knitr::kable(Africa_worst)
 
 plot_africa_worst<-country_data_reord %>% 
 	filter(country %in% Africa_worst$country) %>% 
-	ggplot(aes(x=year,y=lifeExp)) + facet_wrap(~country) + geom_point()+geom_smooth(method="lm",se=FALSE)
+	ggplot(aes(x=year,y=lifeExp)) + facet_wrap(~country) + geom_point()+geom_smooth(method="lm",se=FALSE) +
+	labs(titile="Africa")+ theme(plot.title=element_text(hjust=0.5))
 print(plot_africa_worst)
 
 #plotting both these country data together on a grid

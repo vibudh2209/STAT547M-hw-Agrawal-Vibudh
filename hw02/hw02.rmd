@@ -1,0 +1,66 @@
+---
+title: "hw02"
+output: github_document
+---
+
+# This markdown file compile together all the work done 
+
+**Initially data was imported from gapminder library in the form of country.tsv**
+
+```{r}
+country_data <- read.delim("country.tsv")
+knitr::kable(head(country_data))
+```
+
+
+**Few reference plots were plotted**
+
+- Year vs lifeExp weighted by population for all the contenents
+
+![](https://github.com/vibudh2209/STAT547M-hw-Agrawal-Vibudh/blob/master/hw02/Weighted%20LifeExp%20by%20pop%20vs%20Year.png?raw=true)
+
+- GDP spread across different continent
+
+![](https://github.com/vibudh2209/STAT547M-hw-Agrawal-Vibudh/blob/master/hw02/GDP%20Spread%20for%20different%20continent.png?raw=true)
+
+- average pop for each continent before reordering
+
+![](https://github.com/vibudh2209/STAT547M-hw-Agrawal-Vibudh/blob/master/hw02/Pop%20Avergae%20for%20different%20continent.png?raw=true)
+
+- average pop for each continent after reordering
+
+![](https://github.com/vibudh2209/STAT547M-hw-Agrawal-Vibudh/blob/master/hw02/Pop%20Avergae%20reordered%20for%20different%20continent.png?raw=true)
+
+**Continents were reordered based on lifeExp and both plots before and after reordering were plotted and reordered file was saved for further use**
+
+- Median lifeExp for each continent befor reordering
+
+![](https://github.com/vibudh2209/STAT547M-hw-Agrawal-Vibudh/blob/master/hw02/Median_lifeExp%20for%20each%20continent%20unordered.png?raw=true)
+
+- Median lifeExp for each continent after reordering
+
+![](https://github.com/vibudh2209/STAT547M-hw-Agrawal-Vibudh/blob/master/hw02/Median_lifeExp%20reordered%20for%20each%20continent.png?raw=true)
+
+**Next loaded the reordered file and proved that order is intact by plotting the lifeExp vs year for different continent and comparing it with unordered plot**
+
+**Fitted a linear model to lifeExp vs year for each country by first nesting the data and then mutating using map and finally unnesting the data**
+
+```{r}
+nest_data <- readRDS("regression.rds")
+knitr::kable(head(nest_data))
+```
+
+**Found the 3 worst countries for Asia and Africa (the rest can be done in same way) by checking the maximum standard error in predicted coefficients for each continent**
+
+- Plot of LifeExp vs years for 3 worst countries for both Asia and Africa
+
+![](https://github.com/vibudh2209/STAT547M-hw-Agrawal-Vibudh/blob/master/hw02/country_plot.png?raw=true)
+
+- It is clear from the plot that there is a really bad trend for lifeExp vs years for each of the countries which implies poverty, war, epidemic etc
+
+**Saved the data for these countries for both Asia and Africa**
+
+
+
+
+

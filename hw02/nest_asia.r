@@ -52,7 +52,7 @@ Reord_data <- country_data %>%
 	geom_point() + labs(title="Pop Avergae reordered for different continent") + 
 	theme(plot.title=element_text(hjust=0.5)) + scale_y_log10() 
 print(Reord_data)
-ggsave("Pop Avergae reordered for different continent.png",Avg_pop)
+ggsave("Pop Avergae reordered for different continent.png",Reord_data)
 
 
 # Reordering continent based on lifeExp and saving them to a file
