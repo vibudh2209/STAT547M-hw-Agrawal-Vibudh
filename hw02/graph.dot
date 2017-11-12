@@ -1,0 +1,21 @@
+digraph G {
+n10[label="/Library/Frameworks/R.framework/Versions/3.4/Resources/library/gapminder/gapminder.tsv", color="green"];
+n2[label="all", color="red"];
+n9[label="country.tsv", color="red"];
+n3[label="hw02.html", color="red"];
+n4[label="hw02.rmd", color="green"];
+n8[label="nest_asia.r", color="green"];
+n6[label="reg_out.r", color="green"];
+n5[label="regression.rds", color="red"];
+n7[label="reord_con_life.rds", color="red"];
+n3 -> n2 ; 
+n10 -> n9 ; 
+n9 -> n3 ; 
+n4 -> n3 ; 
+n5 -> n3 ; 
+n9 -> n5 ; 
+n6 -> n5 ; 
+n7 -> n5 ; 
+n9 -> n7 ; 
+n8 -> n7 ; 
+}
