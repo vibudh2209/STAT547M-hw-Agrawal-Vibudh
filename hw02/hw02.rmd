@@ -3,7 +3,13 @@ title: "hw02"
 output: github_document
 ---
 
-# This markdown file compile together all the work done 
+# This markdown file compile together all the work done and shows overall structure 
+
+## Overall Structure
+
+![](https://github.com/vibudh2209/STAT547M-hw-Agrawal-Vibudh/blob/master/hw02/graph.png?raw=true)
+
+
 
 **Initially data was imported from gapminder library in the form of country.tsv**
 
