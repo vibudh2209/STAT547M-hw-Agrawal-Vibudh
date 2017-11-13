@@ -1,8 +1,11 @@
 # Welcome to HW02 of Vibudh Agrawal
 
 The link to [mark down](https://github.com/vibudh2209/STAT547M-hw-Agrawal-Vibudh/blob/master/hw02/hw02.md) file  
+
 The link to [makefile](https://github.com/vibudh2209/STAT547M-hw-Agrawal-Vibudh/blob/master/hw02/Makefile)
+
 The link to [Masterfile](https://github.com/vibudh2209/STAT547M-hw-Agrawal-Vibudh/blob/master/hw02/master.r)
+
 The link to [cleanerfile](https://github.com/vibudh2209/STAT547M-hw-Agrawal-Vibudh/blob/master/hw02/cleansc.r)
 
 ## The over all pipeline:
