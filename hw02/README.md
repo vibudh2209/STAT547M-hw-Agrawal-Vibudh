@@ -2,6 +2,8 @@
 
 The link to [mark down](https://github.com/vibudh2209/STAT547M-hw-Agrawal-Vibudh/blob/master/hw02/hw02.md) file  
 The link to [makefile](https://github.com/vibudh2209/STAT547M-hw-Agrawal-Vibudh/blob/master/hw02/Makefile)
+The link to [Masterfile](https://github.com/vibudh2209/STAT547M-hw-Agrawal-Vibudh/blob/master/hw02/master.r)
+The link to [cleanerfile](https://github.com/vibudh2209/STAT547M-hw-Agrawal-Vibudh/blob/master/hw02/cleansc.r)
 
 ## The over all pipeline:
 
@@ -17,6 +19,7 @@ The link to [makefile](https://github.com/vibudh2209/STAT547M-hw-Agrawal-Vibudh/
     - What is done is explained in markdown file
 - Finally the markdown file named [hw02.md](https://github.com/vibudh2209/STAT547M-hw-Agrawal-Vibudh/blob/master/hw02/hw02.md) was rendered using rmarkdown::render() command and taking inputs both country.tsv and regression.rds
 - Everything was compiled together using [makefile](https://github.com/vibudh2209/STAT547M-hw-Agrawal-Vibudh/blob/master/hw02/Makefile)
+- Everything can also be executed using [Masterfile](https://github.com/vibudh2209/STAT547M-hw-Agrawal-Vibudh/blob/master/hw02/master.r) and cleaned by [cleanerfile](https://github.com/vibudh2209/STAT547M-hw-Agrawal-Vibudh/blob/master/hw02/cleansc.r)
 
 ## Progress Report
 
