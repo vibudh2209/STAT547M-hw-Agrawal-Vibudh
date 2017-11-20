@@ -1,0 +1,12 @@
+name: BC_Liqour
+title: BC_Liqour
+username:
+account: vibudh-applications
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 237575
+bundleId: 1084806
+url: https://vibudh-applications.shinyapps.io/BC_Liqour/
+when: 1511137128.92668
+asMultiple: FALSE
+asStatic: FALSE
