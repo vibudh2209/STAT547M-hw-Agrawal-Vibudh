@@ -1,7 +1,9 @@
 # Hi Welcome to Hw03 
 
 Link to [UI.r](https://github.com/vibudh2209/STAT547M-hw-Agrawal-Vibudh/blob/master/hw03/app/ui.r)
+
 Link to [server.r](https://github.com/vibudh2209/STAT547M-hw-Agrawal-Vibudh/blob/master/hw03/app/server.r)
+
 Link to [hosted app](https://vibudh-applications.shinyapps.io/BC_Liqour/)
 
 # Detailed explanation of Things implimented
@@ -16,7 +18,7 @@ Server:
 
 ![](https://github.com/vibudh2209/STAT547M-hw-Agrawal-Vibudh/blob/master/hw03/Extra_Images/Server.png?raw=true)
 
-The following changes were made:
+### The following changes were made:
 
 - Add an option to sort the results table by price [here](#Head1)
 - Add an image of the BC Liquor Store to the UI [here](#Head2)
@@ -29,15 +31,15 @@ The following changes were made:
 - Provide a way for the user to show results from all countries (instead of forcing a filter by only one specific country) [here](#Head9)
 
 
-The Process [here](#Head)
+### The Process [here](#Head)
 
-The resources [here](#Headd)
+### The resources [here](#Headd)
 
 
 <a name=Head1>
 </a>
 
-**Add an option to sort the results table by price**
+### Add an option to sort the results table by price
 
 In UI I added The following:
 
@@ -47,14 +49,14 @@ In Server under filter pipeline I added:
 
 *{if(input$Order) arrange(.,Price) else .}*
 
-![](https://github.com/vibudh2209/STAT547M-hw-Agrawal-Vibudh/blob/master/hw03/Extra_Images/Price sort.png?raw=true)
+![](https://github.com/vibudh2209/STAT547M-hw-Agrawal-Vibudh/blob/master/hw03/Extra_Images/Price_sort.png?raw=true)
 
 
 
 <a name=Head2>
 </a>
 
-**Add an image of the BC Liquor Store to the UI**
+### Add an image of the BC Liquor Store to the UI
 
 The following thing I added in UI:
 
@@ -76,7 +78,7 @@ bc-liq2.jpeg
 <a name=Head3>
 </a>
 
-**Use the DT package to turn the current results table into an interactive table**
+### Use the DT package to turn the current results table into an interactive table
 
 The following thing I added in UI:
 
@@ -89,7 +91,7 @@ The following thing I added in Server:
 <a name=Head4>
 </a>
 
-**Place the plot and the table in separate tabs**
+### Place the plot and the table in separate tabs
 
 The following thing I added in UI:
 
@@ -98,7 +100,7 @@ The following thing I added in UI:
 <a name=Head5>
 </a>
 
-**Allow the user to download the results table as a ..csv file**
+### Allow the user to download the results table as a ..csv file
 
 The following thing I added in UI:
 
@@ -112,7 +114,7 @@ The following thing I added in Server:
 <a name=Head6>
 </a>
 
-**When the user wants to see only wines, show a new input that allows the user to filter by sweetness level. Only show this input if wines are selected**
+### When the user wants to see only wines, show a new input that allows the user to filter by sweetness level. Only show this input if wines are selected
 
 The following thing I added in UI:
 
@@ -128,7 +130,7 @@ The following thing I added in filtered pipeline in Server:
 <a name=Head7>
 </a>
 
-**Allow the user to search for multiple alcohol types simultaneously, instead of being able to choose only wines/beers/etc**
+### Allow the user to search for multiple alcohol types simultaneously, instead of being able to choose only wines/beers/etc
 
 The following thing I added in UI:
 
@@ -142,7 +144,7 @@ The following thing I added in Server:
 <a name=Head8>
 </a>
 
-**If you look at the dataset, you’ll see that each product has a “type” (beer, wine, spirit, or refreshment) and also a “subtype” (red wine, rum, cider, etc.). Add an input for “subtype” that will let the user filter for only a specific subtype of products. Since each type has different subtype options, the choices for subtype should get re-generated every time a new type is chosen**
+### If you look at the dataset, you’ll see that each product has a “type” (beer, wine, spirit, or refreshment) and also a “subtype” (red wine, rum, cider, etc.). Add an input for “subtype” that will let the user filter for only a specific subtype of products. Since each type has different subtype options, the choices for subtype should get re-generated every time a new type is chosen
 
 The following thing I added in UI:
 
@@ -170,7 +172,7 @@ In here only the sub categories which are within the price range as well as type
 <a name=Head9>
 </a>
 
-**Provide a way for the user to show results from all countries (instead of forcing a filter by only one specific country)**
+### Provide a way for the user to show results from all countries (instead of forcing a filter by only one specific country)
 
 The following thing I added in UI:
 
